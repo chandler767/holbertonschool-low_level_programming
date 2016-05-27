@@ -296,7 +296,7 @@ int str_len(const char *str)
     total++;
       str++;
     }
-    return total; /* return length of string */
+    return total; /* Return length of string. */
 }
 
 int str_ncomp(char *s1, char *s2, int c)
@@ -310,7 +310,7 @@ int str_ncomp(char *s1, char *s2, int c)
   n = (c > n) ? n : c;
   while(i<n)
   {
-    if(s1[i]!=s2[i]) /*compare strings */
+    if(s1[i]!=s2[i]) /* Compare strings. */
     {
       t=s1[i]-s2[i]; 
       break;
@@ -321,5 +321,4 @@ int str_ncomp(char *s1, char *s2, int c)
     i++;
   }
   return (t);
-
 }
